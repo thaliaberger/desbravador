@@ -1,0 +1,69 @@
+body {
+  margin: 0 0;
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#user-search {
+  width: 320px;
+}
+
+#user-details,
+#repo-details {
+  text-align: center;
+}
+
+#user-img {
+  width: 100px;
+  margin: 20px 0;
+}
+
+#text-details {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+#text-details p,
+#repo-details p {
+  background-color: #cccccc;
+  margin: 5px;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* MEDIUM */
+
+@media screen and (max-width: 768px) {
+  ol {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* SMALL */
+
+@media screen and (max-width: 576px) {
+  #text-details {
+    flex-direction: column;
+    align-items: center;
+    margin: 1px;
+  }
+}
+
+/* EXTRA SMALL */
+
+@media screen and (max-width: 575px) {
+  ol {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Desbravador - Teste</title>
+  </head>
+  <body>
+                  <!-- HEADER -->
+          <header style="display: block;">
+            <h1>Pesquisar usuário do GitHub</h1>
+            <input type="search" id="user-search" />
+            <button id="search-btn">Pesquisar</button>
+            <small id="error" style="display: none"
+              >Tente novamente!</small
+            >
+          </header>
+ <main>   
+                <!-- USUÁRIO -->
+    <div id="user-details" style="display: none;"> 
+        <img id="user-img" src="">
+        
+      <h1 id="user-name"></h1>
+      <div id="text-details">
+      <p><p id="seguidores"></p>seguidores</p>
+      <p><p id="seguindo"></p>seguindo</p>
+      <p>Email:<p id="email"></p></p>
+      <p>Bio:<p id="bio"></p></p>
+    </div>
+
+        <h2>Repositórios</h2>
+        <select name="selection" id="selection">
+          <option id="mais-estrelas" value="mais-estrelas">Mais estrelas</option>
+          <option id="menos-estrelas" value="menos-estrelas">Menos estrelas</option>
+        </select>
+        <ol id="lista">
+        </ol>
+    </div>
+
+
+    <!-- DETALHES DO REPOSITÓRIO -->
+
+    <div id="repo-details" style="display: none;">
+        <h1 id="repo-name"></h1>
+       <p>Descrição: <p id="repo-description"></p></p>
+        <p>Estrelas:<p id="repo-stars"></p></p>
+        <p>Linguagem: <p id="repo-language"></p></p>
+        <a href="#" id="voltar-link">Voltar</a>
+        <a href="" target="_blank" id="repo-github-link">Ver no GitHub</a>
+    </div>
+</main>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
