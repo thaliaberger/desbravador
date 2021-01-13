@@ -30,6 +30,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: baseline;
+  max-width: 700px;
 }
 #text-details p,
 #repo-details p {
