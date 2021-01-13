@@ -104,7 +104,7 @@ btn.onclick = function () {
 
                 repoStars.innerText = data.stargazers_count;
                 repoLanguage.innerText = data.language;
-                repoGitHubLink.setAttribute("html", `${data.owner.html_url}`);
+                repoGitHubLink.setAttribute("href", `${data.owner.html_url}`);
               })
               .catch(function (error) {
                 console.log(error.message);
